@@ -15,7 +15,7 @@ COPY . .
 RUN mkdir -p final_model
 
 # Expose the port your Flask app runs on
-EXPOSE 5000
+EXPOSE 8080
 
 # Run the Flask application
 CMD ["python3", "app.py"]
