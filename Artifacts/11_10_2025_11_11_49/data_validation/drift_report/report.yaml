@@ -1,0 +1,57 @@
+Booking_ID:
+  drift_status: false
+  p_value: 0.3891063641350121
+arrival_date:
+  drift_status: false
+  p_value: 0.9522407130539235
+arrival_month:
+  drift_status: false
+  p_value: 0.770450589555498
+arrival_year:
+  drift_status: false
+  p_value: 0.6089094090325615
+avg_price_per_room:
+  drift_status: false
+  p_value: 0.5267615400246781
+booking_status:
+  drift_status: false
+  p_value: 0.2303732607269553
+lead_time:
+  drift_status: false
+  p_value: 0.2646569091427481
+market_segment_type:
+  drift_status: false
+  p_value: 0.9970695397292693
+no_of_adults:
+  drift_status: false
+  p_value: 0.8417489747819924
+no_of_children:
+  drift_status: false
+  p_value: 0.9999999990991278
+no_of_previous_bookings_not_canceled:
+  drift_status: false
+  p_value: 0.99999999850189
+no_of_previous_cancellations:
+  drift_status: false
+  p_value: 0.9999999999999716
+no_of_special_requests:
+  drift_status: false
+  p_value: 0.9982120008645273
+no_of_week_nights:
+  drift_status: false
+  p_value: 0.9982120008645279
+no_of_weekend_nights:
+  drift_status: false
+  p_value: 0.9998468509671138
+repeated_guest:
+  drift_status: false
+  p_value: 0.9999868030991957
+required_car_parking_space:
+  drift_status: false
+  p_value: 1.0
+room_type_reserved:
+  drift_status: false
+  p_value: 1.0
+type_of_meal_plan:
+  drift_status: false
+  p_value: 1.0
