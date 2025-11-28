@@ -680,18 +680,7 @@ curl -X POST "http://localhost:8080/api/predict" \
 }
 ```
 
-### Feature Importance (Top 10)
 
-1. **lead_time**: 0.245 - Days between booking and arrival
-2. **avg_price_per_room**: 0.187 - Room pricing
-3. **no_of_special_requests**: 0.134 - Special service requests
-4. **no_of_previous_cancellations**: 0.098 - Historical cancellation behavior
-5. **market_segment_type**: 0.076 - Booking channel
-6. **no_of_week_nights**: 0.065 - Weekday stay duration
-7. **room_type_reserved**: 0.052 - Room category
-8. **arrival_month**: 0.041 - Seasonality
-9. **no_of_weekend_nights**: 0.038 - Weekend stay duration
-10. **repeated_guest**: 0.024 - Customer loyalty
 
 ### Class Imbalance Handling
 
@@ -872,7 +861,6 @@ Developer Push → GitHub → CI Tests → Build Docker → Push to Public ECR �
 Deploy to EC2 → Stop Old Container → Start New Container → Live on Port 8080
 ```
 
-**Deployment Time**: ~6-10 minutes (from push to live)
 
 ### Volume Mounting Strategy
 
@@ -927,139 +915,3 @@ This allows:
 - [ ] Load testing and performance benchmarking
 - [ ] Add data versioning (DVC)
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these guidelines:
-
-### How to Contribute
-
-1. **Fork the Repository**
-```bash
-git clone https://github.com/sanjeevpatil804/hotel-reservation-prediction.git
-```
-
-2. **Create a Feature Branch**
-```bash
-git checkout -b feature/your-feature-name
-```
-
-3. **Make Your Changes**
-- Follow PEP 8 style guidelines
-- Add docstrings to functions and classes
-- Update tests if applicable
-- Update documentation
-
-4. **Commit Your Changes**
-```bash
-git add .
-git commit -m "Add: Your descriptive commit message"
-```
-
-5. **Push to Your Fork**
-```bash
-git push origin feature/your-feature-name
-```
-
-6. **Create a Pull Request**
-- Provide a clear description of changes
-- Reference any related issues
-- Include before/after metrics if applicable
-
-### Code Quality Standards
-- **PEP 8**: Follow Python style guidelines
-- **Type Hints**: Use type annotations
-- **Docstrings**: Document all functions and classes
-- **Testing**: Add tests for new features
-- **Logging**: Use proper logging instead of print statements
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
-```
-MIT License
-
-Copyright (c) 2025 Sanjeev Patil
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-```
-
----
-
-## 👨‍💻 Author
-
-**Sanjeev Patil**
-
-- GitHub: [@sanjeevpatil804](https://github.com/sanjeevpatil804)
-- LinkedIn: [Sanjeev Patil](https://www.linkedin.com/in/sanjeevpatil804)
-- Email: sanjeevpatil804@aol.com
-
----
-
-## 🙏 Acknowledgments
-
-- **Dataset**: Hotel Reservations Dataset
-- **Frameworks**: Flask, XGBoost, scikit-learn, Optuna
-- **Cloud Services**: AWS S3, AWS ECR, AWS EC2
-- **CI/CD**: GitHub Actions
-- **Community**: Open-source contributors and data science community
-
----
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-1. **Check Documentation**: Review this README and code comments
-2. **Search Issues**: Look for similar issues in the GitHub repository
-3. **Open an Issue**: Create a detailed issue with:
-   - Problem description
-   - Steps to reproduce
-   - Expected vs actual behavior
-   - Environment details (OS, Python version, etc.)
-   - Error logs (if applicable)
-
----
-
-## 📊 Project Metrics
-
-- **Lines of Code**: ~2,500+
-- **Components**: 4 (Ingestion, Validation, Transformation, Training)
-- **Features**: 17
-- **Model Type**: XGBoost Classifier
-- **Deployment**: Dockerized, AWS ECR + EC2
-- **CI/CD**: GitHub Actions (3-stage pipeline)
-
----
-
-## ⭐ Star the Repository
-
-If you find this project useful for learning or in production, please consider giving it a star ⭐ on GitHub!
-
----
-
-<div align="center">
-
-**Built with ❤️ for the Hospitality Industry**
-
-*Helping Hotels Optimize Revenue Through Intelligent Predictions*
-
-[🔝 Back to Top](#-end-to-end-hotel-reservation-cancellation-prediction)
-
-</div>
