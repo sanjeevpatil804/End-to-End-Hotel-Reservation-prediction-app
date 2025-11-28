@@ -191,7 +191,7 @@ The system enables hotels to proactively manage reservations, implement dynamic 
   - `0`: Not Canceled
 
 ### Data Source
-- **Storage**: AWS S3 Bucket (`mybuckethr443`)
+- **Storage**: AWS S3 Bucket 
 - **File**: `HotelReservations.csv`
 - **Split**: 80% Training, 20% Testing
 
@@ -268,7 +268,7 @@ Training Process:
 4. Complete pipeline saved (preprocessor + model)
 
 Artifact Location: Artifacts/{timestamp}/model_trainer/
-Final Model: final_model/model.pkl (NetworkModel object)
+Final Model: final_model/model.pkl 
 ```
 
 ### 5️⃣ **Model Evaluation**
